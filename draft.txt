@@ -1,0 +1,17 @@
+nav bar on top
+
+picture from /r/earthporn as a parallax image as the header OR if feeling ambitious, clone the firewatch header.
+
+use materialize cards.
+
+analog css animation clock.
+
+weather api.
+
+favorite websites in a card displayed as icons.
+
+to-do list/ notes if feeling ambitious
+
+top 15 from /r/all displayed as cards
+
+if feeling ambitious, run articles from reddit api or npr api through smmry api to display the summed up version of article in a card.

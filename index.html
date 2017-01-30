@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="./weather-icons-master/css/weather-icons-wind.css" />
+		<link rel="stylesheet" href="./weather-icons-master/css/weather-icons.css" />
+    <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+	<body ng-controller="mainController">
+
+	<main>
+
+		<!--Side Nav-->
+
+		<ul id="slide-out" class="side-nav fixed">
+					<li class="logo">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Red_Fuji_southern_wind_clear_morning.jpg"></img>
+					</li>
+		      <li><a ui-sref="home">
+						<i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+		      <li><a ui-sref="weather"><i class="fa fa-cloud" aria-hidden="true"></i>Weather</a></li>
+					<li><a ui-sref="tasks"><i class="fa fa-check" aria-hidden="true"></i>Tasks</a></li>
+					<li><a ui-sref="news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a></li>
+					<li><a ui-sref="pics"><i class="fa fa-picture-o" aria-hidden="true"></i>Pics</a></li>
+		</ul>
+
+			<!--Top Nav-->
+
+	<nav>
+    <div class="top-nav nav-wrapper #c62828 grey darken-3">
+      <a href="#!" class="brand-logo">{{CurrentDate | date:'hh:mm a'}}</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+				<li><a ui-sref="home">Home</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+				<li class="logo">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Red_Fuji_southern_wind_clear_morning.jpg"></img>
+				</li>
+				<li><a ui-sref="home">
+					<i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+				<li><a ui-sref="weather"><i class="fa fa-cloud" aria-hidden="true"></i>Weather</a></li>
+				<li><a ui-sref="tasks"><i class="fa fa-check" aria-hidden="true"></i>Tasks</a></li>
+				<li><a ui-sref="news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a></li>
+				<li><a ui-sref="pics"><i class="fa fa-fa-picture-o" aria-hidden="true"></i>Pics</a></li>
+      </ul>
+    </div>
+  </nav>
+
+		<ui-view></ui-view>
+
+		</main>
+
+<!--Scripts-->
+
+	<script
+		  src="https://code.jquery.com/jquery-3.1.1.js"
+		  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+		  crossorigin="anonymous"></script>
+	<script src="./materialize/js/materialize.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+	<script src="./scripts/app.js"></script>
+	<script src="./scripts/mainController.js"></script>
+	<script src="./scripts/mainService.js"></script>
+	<script src="./scripts/weatherService.js"></script>
+	<script src="./scripts/websitesService.js"></script>
+	</body>
+</html>

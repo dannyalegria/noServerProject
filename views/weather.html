@@ -1,0 +1,149 @@
+<!--Weather-->
+
+<div class="container box">
+  <div class="row">
+  <div class="section">
+
+    <div class="col s12 m4 l10 weather-column">
+      <ul id="task-card" class="collection with-header">
+        <li class="collection-header #1b5e20 green darken-4">
+          <h4 class="task-card-title">Weather in {{provoWeather.location.city}}</h4>
+          </li>
+        <div class="row">
+
+          <div class="col s4 m6 weather-column-l">
+            <ul>
+              <li><i class="wi {{icon}} weather-icon"></i></li>
+              <li><strong>Location:</strong> {{provoWeather.location.city}}</li>
+              <li><strong>Date:</strong>
+                {{provoWeather.item.forecast['0'].date}}</li>
+              <li><strong>Condition:</strong> {{provoWeather.item.forecast['0'].text}}</li>
+            </ul>
+          </div>
+
+          <div class="col s4 m6 weather-column-r">
+            <ul>
+              <li><strong>Temperature:</strong> {{provoWeather.item.condition.temp}} &#8457</li>
+              <li><strong>High:</strong> {{provoWeather.item.forecast['0'].high}} &#8457</li>
+              <li><strong>Low:</strong> {{provoWeather.item.forecast['0'].low}} &#8457</li>
+              <li><strong>Sunrise:</strong> {{provoWeather.astronomy.sunrise}}</li>
+              <li><strong>Sunset:</strong> {{provoWeather.astronomy.sunset}}</li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container box">
+  <div class="row">
+  <div class="section">
+
+    <div class="col s12 m4 l10 weather-column">
+      <ul id="task-card" class="collection with-header">
+        <li class="collection-header cyan">
+          <h4 class="task-card-title">Forecast for {{provoWeather.location.city}}</h4>
+          </li>
+        <div class="row">
+
+          <div class="col s4 m6 weather-column-l">
+            <ul>
+              <li><i class="wi {{icon}} weather-icon"></i></li>
+              <li><strong>Date:</strong>{{provoWeather.item.forecast['1'].date}}</li>
+              <li><strong>Condition:</strong> {{provoWeather.item.forecast['1'].text}}</li>
+              <li><strong>High:</strong> {{provoWeather.item.forecast['1'].high}} &#8457</li>
+              <li><strong>Low:</strong> {{provoWeather.item.forecast['1'].low}} &#8457</li>
+            </ul>
+          </div>
+
+          <div class="col s4 m6 weather-column-l">
+            <ul>
+              <li><i class="wi {{icon}} weather-icon"></i></li>
+              <li><strong>Date:</strong>{{provoWeather.item.forecast['2'].date}}</li>
+              <li><strong>Condition:</strong> {{provoWeather.item.forecast['2'].text}}</li>
+              <li><strong>High:</strong> {{provoWeather.item.forecast['2'].high}} &#8457</li>
+              <li><strong>Low:</strong> {{provoWeather.item.forecast['2'].low}} &#8457</li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container box">
+  <div class="row">
+  <div class="section">
+
+    <div class="col s12 m4 l10 weather-column">
+      <ul id="task-card" class="collection with-header">
+        <li class="collection-header #1b5e20 green darken-4">
+          <h4 class="task-card-title">Weather in {{sfWeather.location.city}}</h4>
+          </li>
+        <div class="row">
+
+          <div class="col s4 m6 weather-column-l">
+            <ul>
+              <li><i class="wi {{icon}} weather-icon"></i></li>
+              <li><strong>Location:</strong> {{sfWeather.location.city}}</li>
+              <li><strong>Date:</strong>
+                {{sfWeather.item.forecast['0'].date}}</li>
+              <li><strong>Condition:</strong> {{sfWeather.item.forecast['0'].text}}</li>
+            </ul>
+          </div>
+
+          <div class="col s4 m6 weather-column-r">
+            <ul>
+              <li><strong>Temperature:</strong> {{sfWeather.item.condition.temp}} &#8457</li>
+              <li><strong>High:</strong> {{sfWeather.item.forecast['0'].high}} &#8457</li>
+              <li><strong>Low:</strong> {{sfWeather.item.forecast['0'].low}} &#8457</li>
+              <li><strong>Sunrise:</strong> {{sfWeather.astronomy.sunrise}}</li>
+              <li><strong>Sunset:</strong> {{sfWeather.astronomy.sunset}}</li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container box">
+  <div class="row">
+  <div class="section">
+
+    <div class="col s12 m4 l10 weather-column">
+      <ul id="task-card" class="collection with-header">
+        <li class="collection-header cyan">
+          <h4 class="task-card-title">Forecast for {{sfWeather.location.city}}</h4>
+          </li>
+        <div class="row">
+
+          <div class="col s4 m6 weather-column-l">
+            <ul>
+              <li><i class="wi {{icon}} weather-icon"></i></li>
+              <li><strong>Date:</strong>{{sfWeather.item.forecast['1'].date}}</li>
+              <li><strong>Condition:</strong> {{sfWeather.item.forecast['1'].text}}</li>
+              <li><strong>High:</strong> {{sfWeather.item.forecast['1'].high}} &#8457</li>
+              <li><strong>Low:</strong> {{sfWeather.item.forecast['1'].low}} &#8457</li>
+            </ul>
+          </div>
+
+          <div class="col s4 m6 weather-column-l">
+            <ul>
+              <li><i class="wi {{icon}} weather-icon"></i></li>
+              <li><strong>Date:</strong>{{sfWeather.item.forecast['2'].date}}</li>
+              <li><strong>Condition:</strong> {{sfWeather.item.forecast['2'].text}}</li>
+              <li><strong>High:</strong> {{sfWeather.item.forecast['2'].high}} &#8457</li>
+              <li><strong>Low:</strong> {{sfWeather.item.forecast['2'].low}} &#8457</li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>

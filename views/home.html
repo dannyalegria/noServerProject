@@ -1,0 +1,18 @@
+<!--Favorite Websites-->
+
+<!--Use an ng-repeat here-->
+
+<div class="valign-container box">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 m3" ng-repeat="site in sites">
+        <div class="icon-block">
+          <a href="{{site.url}}" target="_blank">
+            <h2 class="center brown-text"><i class="{{site.icon}}" aria-hidden="true"></i></h2>
+            <h5 class="center">{{site.name}}</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

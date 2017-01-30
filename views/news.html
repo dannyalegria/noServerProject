@@ -1,0 +1,23 @@
+<!--News-->
+
+<!--This could be redone better-->
+
+<!-- <div class="container box">
+  <div class="section">
+    <ul class="collapsible" data-collapsible="accordion">
+      <li ng-repeat="item in data" ng-click="getSmmry(item); showItemSmmry = !showItemSmmry">
+        <div class="collapsible-header"><i class="material-icons">add_circle_outline</i><strong>{{item.data.title}}</strong></div>
+        <div class="collapsible-body" ng-show="showItemSmmry"><span>{{item.smmry}}</span></div>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+<div class = "container">
+  <ul class="collapsible" data-collapsible="accordion">
+    <li ng-repeat="item in data" ng-click="getSmmry(item); showItemSmmry = !showItemSmmry">
+      <div class="collapsible-header"><i class="material-icons">add_circle_outline</i><strong>{{item.data.title}}</div>
+      <div class="collapsible-body" ng-show="showItemSmmry"><span>{{item.smmry}}</span></div>
+    </li>
+  </ul>
+</div>

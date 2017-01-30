@@ -1,0 +1,13 @@
+<script>$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });</script>
+
+<div class="valign-container box">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 m3" ng-repeat="pic in pics">
+        <img class="materialboxed" data-caption="{{pic.data.title}}" width="200" height="200" src="{{pic.data.url}}">
+      </div>
+    </div>
+  </div>
+</div>

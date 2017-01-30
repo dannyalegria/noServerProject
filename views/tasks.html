@@ -1,0 +1,42 @@
+<!--Task List-->
+<div class="container box">
+    <div class="row">
+        <div class="section">
+  <div class="col s12 m4 l10" ng-controller="mainController as todoList">
+    <ul id="task-card" class="collection with-header">
+      <li class="collection-header cyan">
+        <h4 class="task-card-title">Tasks</h4>
+      </li>
+
+      <li class = "collection-item"><span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+      <button class="secondary-content waves-effect waves-light btn" ng-click="todoList.archive()">-</button></li>
+
+
+    <ul class="unstyled">
+      <li ng-repeat="todo in todoList.todos" class="checkbox">
+
+          <input type="checkbox" id="myCheckbox" class="filled-in" ng-model="todo.done">
+          <label class="checkbox" for="myCheckbox">
+          <span class="done-{{todo.done}}">{{todo.text}}</span>
+          <!--c--></label>
+
+        <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+      </li>
+
+    </ul>
+
+    <form ng-submit="todoList.addTodo()">
+      <input type="text" ng-model="todoList.todoText"
+             placeholder="add new todo here">
+      <button class="waves-effect waves-light btn" type="submit" value="add">Add</button>
+    </form>
+
+    </ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

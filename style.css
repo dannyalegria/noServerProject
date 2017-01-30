@@ -1,0 +1,37 @@
+.side-nav li img {
+  height:200px;
+  width:300px;
+}
+
+.weather-column-l {  padding-left: 30px !important;
+  padding-top: 15px !important;
+}
+
+.weather-column-r {
+  padding-top: 10px !important;
+}
+
+.weather-icon {
+  font-size: 2.5em;
+}
+
+.task-list-item {
+  touch-action: pan-y;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.task-list-item li label {
+  color: black !important;
+}
+
+header, main, footer {
+      padding-left: 300px;
+}
+
+
+@media only screen and (max-width : 992px) {
+main, footer {
+    padding-left: 0;
+    }
+}
